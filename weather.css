@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    line-height: 30px;
+    background: #222;
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 120%;
+}
+.card{
+    padding: 2rem;
+    width: 100%;
+    max-width: 370px;
+    border-radius: 25px;
+    margin: 1em;
+    background:#cfcdcdd0;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.search-bar{
+    border-radius: 15px;
+    border: none;
+    color:black;
+    background: #7c7c7c;
+    padding: 0px 20px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+    height: 2.2rem;
+}
+input.search-bar:hover{
+    background:rgb(88, 90, 84);
+    color: white;
+    cursor: pointer;
+}
+button{
+    background: #7c7c7c;
+    margin: 0.5rem;
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: none;
+}
+button:hover{
+    background:rgb(88, 90, 84);
+    color: white;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0;
+}
+.description{
+    text-transform: capitalize;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading....";
+    color: #222;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
